@@ -1,0 +1,179 @@
+
+.footerCon {
+	background-color: $black;
+	padding-top: 150px;
+}
+
+footer .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: $midgrey;
+	justify-content: space-between;
+	.column {
+		width: calc(25% - 30px);
+	}
+	p {
+		font-size: 12px;
+		line-height: 26px;
+	}	
+}
+
+p.footer-title {
+	color: $white;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 15px;
+	border-bottom: 1px solid $midgrey;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	margin-bottom: 20px;
+}
+
+/*ABOUT US*/
+
+.social-icons ul {
+	padding: 0px;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: row;
+}
+
+.social-icons li {
+	list-style-type: none;
+	width: 20%;
+	font-size: 17px;
+}
+
+.social-icons li:hover{
+	color: $white;
+}
+
+/*INSTAGRAM*/
+
+.column2 ul {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	padding-left: 0px;
+	font-size: 0;
+	li {
+		width: 33.33%;
+		list-style-type: none;
+		border: 1px solid $black;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/*TWITTER*/
+
+.column3 {
+	.twitfeed {
+		display: flex;
+		flex-direction:row;
+		i {
+			width: 10%;
+			font-size: 25px;
+			margin-top: 5px;
+		}
+		p {
+			width: calc(90% - 8px);
+			margin-top: 0px;
+			margin-left: 8px;
+		}
+		i:hover {
+			color: $white;
+		}
+	}
+}
+
+/*NEWSLETTER*/
+
+.column4 {
+	input{ 
+		background: #1f1f1f;
+		border: none;
+		width: 80%;
+		float: left;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 10px;
+	} 
+	button {
+		background: #7d7d7d;
+		border: none;
+		color: rgba(244, 244, 244, 0.5);
+		width: 20%;
+		float: left;
+		height: 48px;
+	}
+	button:hover {
+		color: $white;
+	}
+}
+
+.copyright {
+	background-color: #222222;
+	margin-top: 100px;
+}
+
+.copyright_content {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	p:nth-child(1) { 
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		width: 70%;
+		font-size: 11px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	p:nth-child(2) {
+		text-align: right;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		width: 30%;
+		font-size: 11px;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+}
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1080px) {
+	footer .container .column {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.copyright_content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	footer .container .column {
+		width: 50%;
+		padding: 15px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	footer .container .column {
+		width: 100%;
+		padding: 15px;
+	}
+}
+
+
+
+
+

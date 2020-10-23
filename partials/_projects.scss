@@ -1,0 +1,43 @@
+/*PROJECTS*/
+
+.projects {
+	padding-top: 100px;
+}
+
+.projects__portfolio {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	img {
+		width: calc(33.3% - 10px);
+		margin-top: 20px;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+.nick {
+	padding-bottom: 80px;
+	ul {
+		padding-left: 0;
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.projects__portfolio img{
+		width: 50%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.projects__portfolio img{
+		width: 100%;
+	}
+}

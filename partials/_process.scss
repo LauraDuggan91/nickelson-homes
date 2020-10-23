@@ -1,0 +1,141 @@
+/*PROCESS*/
+
+.workProcess {
+	background-color: $superLightGrey;
+	padding-bottom: 50px;
+	button {
+		@include ButtonStyle($black, $offwhite, 12px)
+		margin-top: 100px;
+	}
+	button:hover {
+		background-color: $grey;
+	}
+}
+
+.work {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 100px;
+	.work__paragraphs {
+		width: 50%;
+		position: relative;
+		.largeNumber {
+			font-size: 160px;
+			color: rgba(204, 204, 204, 0.1);
+			font-weight: 300;
+			margin: 10px;
+		}
+	}
+	.work__paragraphs--content {
+		position: absolute;
+		top: 100px;
+		left: 100px;
+	}
+	h4 {
+		text-align: left;
+		font-weight: bold;
+	}
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+
+
+
+
+/*PROGRESS*/
+
+.progress {
+	background: linear-gradient(to bottom, rgba(17, 17, 17, 0.55),rgba(17, 17, 17, 0.55)), url(images/progress_bg.jpg);
+	background-position: center ;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0px;	
+}
+
+.progress .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.progress__icon {
+		text-align: center;
+		padding-top: 100px;
+		padding-bottom: 100px;	
+	}
+	p {
+		color: $superLightGrey;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+	}
+}
+
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1080px) {
+	.work {
+		flex-wrap: wrap;
+		.work__paragraphs {
+			width: 100%;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.lightning {
+		flex-direction: column;
+		div {
+			width: 100%;
+		}
+		.tab {
+			margin: 0 auto;
+		}
+		img {
+			margin: 0 auto;
+		}
+	}
+	.lightning .promo {
+			text-align: center;
+			h4{
+				text-align: center;
+			}
+		}
+	.promoImg {
+		text-align: center;
+		margin: 0 auto;
+	}
+	div .progress__icon {
+		flex-wrap:wrap;
+		width: 50%;
+	}
+}
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	div.progress__icon {
+		flex-wrap:wrap;
+		width: 100%;
+	}
+
+	.progress .container .progress__icon {
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+	}
+
+	.progress {
+		background: none;
+		background-color: black;
+	}
+
+}
+
+

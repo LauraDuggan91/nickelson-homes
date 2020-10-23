@@ -1,0 +1,120 @@
+.testimonials {
+	padding-bottom: 100px;
+}
+.testimonials__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.testimonials__card {
+		width: calc(33.33% - 15px);
+		max-width: 360px;
+		background-color: white;
+		text-align: center;
+		justify-content: space-between;
+		box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+		transition: all 0.3s;	
+		// img {
+		// 	border-radius: 50%;
+		// 	border: 8px solid #fbfbfb;
+		// 	margin-top: 40px;
+		// 	margin-bottom: 30px;
+		// }
+		.testimonial__info {
+			line-height: 26px;
+			color: #999;
+			font-size: 14px;
+			font-weight: 300;
+			padding: 0px 50px 30px 50px;
+			margin: 0;
+		}
+		.testimonial__info::before {
+			content: '';
+			display: block;
+			position: relative;
+			width: 70%;
+			margin: 50px auto 30px auto;
+			border-top: 1px solid #ccc;
+		}
+		.testimonial__info::after {
+			content: '';
+			display: block;
+			position: relative;
+			width: 70%;
+			margin: 30px auto 0px auto;
+			border-top: 1px solid #ccc;
+		}
+		.testimonial__name {
+			color: #777;
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			margin-top: 0;	
+		}
+		// .testimonial__company {
+		// 	text-transform: uppercase;
+		// 	color: $black;
+		// 	font-size: 12px;
+		// 	font-weight: 700;
+		// }
+		.fa-quote-right {
+			color: #d0d0d0;
+			border: 1px solid $superLightGrey;
+			border-radius: 50%;
+			padding-bottom: 50px;
+			padding-top: 20px;
+		}
+	}
+	.testimonials__card:hover {
+		box-shadow: 12px 22px 25px 0px rgba(0, 0, 0, 0.15);
+    	transform: translateY(-5px);
+	}
+}
+
+.backgroundFullBleed {
+	background-color: $backgroundGrey;	
+}
+
+.logos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	.logo__img {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+.logos img {
+	width: 200px;
+
+}
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.testimonials__container {
+		justify-content: space-around;
+		.testimonials__card {
+			width: 100%;
+			max-width: 600px;
+			margin: 30px;
+		}
+	}
+	.logos {
+		justify-content: around;
+		width: 50%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.logos {
+		flex-direction: column;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+

@@ -1,0 +1,101 @@
+$black: #111111;
+$white: #fff;
+$grey: #999999;
+$midgrey: #777777;
+$superLightGrey: #fcfcfc;
+$backgroundGrey: #f8f8f8;
+$offwhite: #ececec;
+
+// @import "../partials/setup";
+// @import "../partials/variables";
+
+
+
+@mixin ButtonStyle($bgcolor,$textcolor,$fontsize) {
+	background-color: $bgcolor;
+	color: $textcolor;
+	font-size: $fontsize;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+}
+
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+}
+
+h2 {
+	color: $black;
+	letter-spacing: 0.1em;
+	font-size: 22px;
+
+}
+
+h5 {
+	color: $grey;
+	letter-spacing: 0.1em;
+	margin-bottom: 100px;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.wrapper {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+section{
+	padding-top: 6em;
+}
+
+main {
+	background-color: $backgroundGrey;
+	padding-top: 7em;
+	padding-bottom: 5em;
+	
+}
+
+.centerButton {
+	text-align: center;
+
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+p {
+	font-size: 18px;
+	color: $grey;
+	font-family: 'Open Sans', sans-serif;
+}
+ul {
+	text-align: center;
+	color: $grey;
+	list-style-type: none;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/whatWeDo";
+@import "partials/process";
+@import "partials/testimonials";
+@import "partials/projects";
+@import "partials/contact";
+@import "partials/footer";
